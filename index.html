@@ -20,19 +20,22 @@
   <script>
     tailwind.config = {
       theme: {
-        extend: {
+        extend:{ 
           colors: {
             clifford: '#da373d',
-          }
-        }
-      }
+          },
+          fontFamily: {
+            'manrope': ["Manrope", 'sans-serif'],
+          },
+        },
+      },
     }
   </script>
 </head>
 
-<body class="w-5/6 mx-auto" >
+<body class="max-w-[1450px] font-manrope" >
 
-  <header class="flex ">
+  <header class="flex w-5/6 mx-auto">
     <!-- Text content -->
       <div class="pt-10 w-6/12">
           <h1 class="text-4xl md:text-7xl font-bold pb-7">It's good <br> tea time at The <br> Tea House</h1>
@@ -58,7 +61,7 @@
      </div>
   </header>
 
-  <main>
+  <main class="w-5/6 mx-auto">
     <!-- Feature Product Section -->
     <section class="mt-16">
         <div class="w-4/6 mx-auto text-center">
@@ -181,9 +184,68 @@
      </section>
 
   </main>
-
-  <footer>
-
+    <!-- footer Secrion -->
+  <footer class="mt-20 bg-orange-100 w-full">
+      <div class="w-5/6 mx-auto">
+        <!-- Logo -->
+          <div class="flex justify-between pt-20">
+              <img src="./images/cup.png" alt="">
+              <div class="flex items-center">
+                  <p class="pr-10">Ready to get strated?</p>
+                  <button class="bg-gradient-to-r from-orange-500 to-red-500 px-5 py-3 rounded-lg text-white font-bold">Get Started</button>
+              </div>
+          </div>
+        <!-- Links -->
+         <div class="grid grid-cols-4 gap-5 pt-20">
+          <!-- First column -->
+            <div>
+              <h3 class="font-semibold text-lg pb-4">Quick Links</h3>
+              <ul class="space-y-2">
+                <li><a class="hover:text-orange-600" href="#">Home</a></li>
+                <li><a class="hover:text-orange-600" href="#">About Us</a></li>
+                <li><a class="hover:text-orange-600" href="#">Insurance</a></li>
+                <li><a class="hover:text-orange-600" href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+          <!-- Socond Column -->
+            <div>
+              <h3 class="font-semibold text-lg pb-4">Our Service</h3>
+              <ul class="space-y-2">
+                <li><a class="hover:text-orange-600" href="#">Life Insurance</a></li>
+                <li><a class="hover:text-orange-600" href="#">Car Insurance</a></li>
+                <li><a class="hover:text-orange-600" href="#">Health Insurance</a></li>
+                <li><a class="hover:text-orange-600" href="#">House Insurance</a></li>
+              </ul>
+            </div>
+          <!-- Third Column -->
+            <div>
+              <h3 class="font-semibold text-lg pb-4">Help</h3>
+              <ul class="space-y-2">
+                <li><a class="hover:text-orange-600" href="#">FAQs</a></li>
+                <li><a class="hover:text-orange-600" href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          <!-- Fourth Column -->
+            <div>
+              <h3 class="font-bold text-2xl pb-4">Subscribe to our newsletter</h3>
+              <div>
+                  <div class="">
+                      <input type="email" placeholder="Email address" class="bg-transparent border-b-2 border-black w-5/6">
+                      <i class="fa-solid fa-chevron-right h-8 w-8 bg-orange-600 rounded-full text-white inline-flex justify-center items-center"></i>
+                  </div>
+                  <div class="text-2xl flex gap-3 mt-5 mb-5">
+                    <i class="fa-brands fa-square-facebook "></i>
+                    <i class="fa-brands fa-square-twitter"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-square-whatsapp"></i>
+                  </div>
+              </div>
+            </div>
+         </div>
+         <div class="w-2/3 mx-auto mt-12 pb-10">
+            <p class="text-center text-gray-600">© 2027 Tea House - All rights reserved.</p>
+         </div>
+      </div>
   </footer>
 </body>
 </html>
